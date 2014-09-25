@@ -4,10 +4,23 @@
 <script src="js/main.js"></script>
 </head>
   <body>
-    <h3>Generador de Notas</h3>
-    Evaluacion Estudiante: <input type="text" id="nota_estudiante" name="text1"></br>
-    Evaluacion Docente: <input type="text" id="nota_docente" name="text2"></br>
-    <p id="tresult"></p>
-    <button onclick="generarNotas()">Generar combinaciones</button>
+    <h1>Generador de Notas</h1>
+    <h2>basado en la reforma Abelino Sinani</h2><br>
+    <section>
+	  <div class="input">
+	    <label for="full-name">Nota Estudiante</label>
+	    <input type="text" id="nota_estudiante" name="nota_estudiante" autocorrect="off" autocapitalize="words" maxlength="2">
+	  </div>
+	  <div class="input">
+	    <label for="email">Nota Docente</label>
+	    <input type="text" id="nota_docente" name="nota_docente" autocorrect="off" autocapitalize="off" maxlength="2">
+	  </div>
+	</section></br>
+    <!--Evaluacion Estudiante: <input type="text" id="nota_estudiante" name="text1"></br>
+    Evaluacion Docente: <input type="text" id="nota_docente" name="text2">-->
+    <div class="dtable"><p id="tresult"></p></div></br>
+    <a class="button" href="#" onclick="generarNotas();return false;">Generar combinaciones</a><br>
+    <!--<button onclick="generarNotas()">Generar combinaciones</button>-->
+    <p class="footer">@wildergonzo - Bolivia 2014</p>
   </body>
 </html>
