@@ -1,3 +1,10 @@
+function runScript(e) {
+    if (e.keyCode == 13) {
+        generarNotas();
+        return false;
+    }
+}
+
 function getRandom(min, max) {
 	return Math.round(Math.random() * (max - min) + min);
 }
